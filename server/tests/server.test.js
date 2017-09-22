@@ -251,7 +251,6 @@ describe('POST /users', () => {
   });
 
   it('should not create user if email in use', (done) => {
-    var password = 'ABCDEFG';
 
     request(app)
       .post('/users')
